@@ -1,0 +1,206 @@
+body{
+    background:url('./Photos/pexels-pixabay-36717.jpg');
+    margin: 0;
+    padding:0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border:2px solid white;
+    background-color: black;
+    color:white;
+    padding:19px 12px;
+}
+.logo{
+    font-size: 22px;
+}
+ul {
+    display:flex;
+     font-size: large;
+}
+ul li{
+    list-style: none;
+    padding:0px 13px;
+}
+ul li a{
+    color:white;
+    text-decoration:none;
+}
+ul li a:hover{
+    color:rgb(178, 174, 193);
+}
+footer{
+    font-size:22px;
+    background-color: black;
+    color:white;
+    display:flex;
+    padding:12px;
+     align-items: center;
+} 
+main{
+  min-height:80vh;
+}
+#logoImg{
+    filter:invert(0);   /* To make the photo normal ,use 1*/
+    width:15px;
+ }
+.container{
+    background:url('space-art-5626853_1280.webp');
+    max-width:80wh;
+     margin:auto;
+    
+} 
+form{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 26px;
+    align-items: center;
+    color:white;
+}
+
+input{
+    width:300px;
+    height: 42px;
+    border:2px solid grey;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+#submit{
+    height: 52px;
+    font-size:x-large ;
+    cursor:pointer;
+}
+footer{
+    background-color: black;
+     
+}
+h2{
+    color:white;
+}
+@media only screen and (max-width:600px){
+     body{
+        background-color: lightblue;
+     }
+
+     .container{
+             font-size: 12px;
+        
+     }
+     nav {
+            flex-direction: column;
+     }
+     nav ul{
+        display:none;
+     }
+     .logo{
+        font-size: 50px;
+        padding:6px 0px;
+     }
+     #logoImg{
+        width:45px;
+        filter:invert(0);
+     }
+}
+#emailHeading{
+    font-size:28px;
+}
+#submit:hover{
+  color:white;
+  background-color: black;
+  border:2px solid grey;
+}
+#resultContainer{
+    color:white;
+}
+#resultContainer div::first-letter{
+    text-transform: uppercase;
+}
+#finalAnswer{
+    color:aqua;
+   font-size: xx-large;
+
+}
+
+
+  /*
+  Taken from uiverse.io
+  */
+  #loader { 
+    display:none;
+  
+    transition: all 0.4s;
+    justify-content: center;
+   
+  }#loader div {
+    margin-left: 0.8rem;
+    background-color: rgb(34, 34, 34);
+    box-shadow: inset 2px 2px 10px black;
+    border-radius: 100%;
+    height: 1rem;
+    width: 1rem;
+  }
+  
+  .box-load1 {
+    animation: brighten 1.2s infinite;
+  }
+  
+  .box-load2 {
+    animation: brighten 1.2s infinite;
+    animation-delay: .2s;
+  }
+  
+  .box-load3 {
+    animation: brighten 1.2s infinite;
+    animation-delay: .4s;
+  }
+  
+  @keyframes brighten {
+    100% {
+      background-color: rgb(165, 165, 165);
+      box-shadow: none;
+    }
+  }
+
+  .scanner span {
+    color: transparent;
+    font-size: 1.4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .scanner span::before {
+    content: "Loading...";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 4px solid #17FEFF;
+    overflow: hidden;
+    color: #17FEFF;
+    animation: load91371 2s linear infinite;
+  }
+  
+  @keyframes load91371 {
+    0%, 10%, 100% {
+      width: 0;
+    }
+  
+    10%,20%,30%,40%,50%,60%,70%,80%,90%,100% {
+      border-right-color: transparent;
+    }
+  
+    11%,21%,31%,41%,51%,61%,71%,81%,91% {
+      border-right-color: #17FEFF;
+    }
+  
+    60%, 80% {
+      width: 100%;
+    }
+  }
+  
